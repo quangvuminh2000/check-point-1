@@ -1,1 +1,1 @@
-export {default as ExerraPhishing} from './get-apis';
+export {default as ExerraPhishing} from './ExerraPhishing';
