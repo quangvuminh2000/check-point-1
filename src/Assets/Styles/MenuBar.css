@@ -1,0 +1,11 @@
+.MenuBar {
+	background-color: rgb(153, 135, 135);
+	font-size: 20px;
+	color: white;
+	height: 70px;
+	margin: 2rem 3rem;
+}
+
+.list {
+	list-style-type: none;
+}

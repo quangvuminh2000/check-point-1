@@ -1,0 +1,17 @@
+.error {
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.message {
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 6px;
+	max-width: 60%;
+}
+
+.message-block {
+	width: 100%;
+	display: inline-block;
+}

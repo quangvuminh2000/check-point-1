@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import '../Assets/Styles/OutputPage.css';
+
 
 const ExerraPhishing = ({domain}) => {
 	const [isLoading, setLoading] = useState(true);
@@ -16,7 +18,9 @@ const ExerraPhishing = ({domain}) => {
 				}
 			};
 
-			const response = await fetch(`https://exerra-phishing-check.p.rapidapi.com/?url=https%3A%2F%2F${domain}`, options)
+			const req_uri = `https://exerra-phishing-check.p.rapidapi.com/?url=https%3A%2F%2F${domain}`
+
+			const response = await fetch(req_uri, options)
 				.then(response => response.json())
 				.then(response => console.log(response))
 				.catch(err => console.error(err));
